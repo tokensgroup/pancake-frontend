@@ -1,5 +1,6 @@
 import React from 'react'
-import { Flex, UserMenuItem, WarningIcon } from '@pancakeswap/uikit'
+// import { Flex, UserMenuItem, WarningIcon } from '@pancakeswap/uikit'
+import { Flex, WarningIcon } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 
 interface WalletUserMenuItemProps {
@@ -11,12 +12,13 @@ const WalletUserMenuItem: React.FC<WalletUserMenuItemProps> = ({ hasLowBnbBalanc
   const { t } = useTranslation()
 
   return (
-    <UserMenuItem as="button" onClick={onPresentWalletModal}>
-      <Flex alignItems="center" justifyContent="space-between" width="100%">
-        {t('Wallet')}
-        {hasLowBnbBalance && <WarningIcon color="warning" width="24px" />}
-      </Flex>
-    </UserMenuItem>
+    // <UserMenuItem as="button" onClick={onPresentWalletModal}>
+    //   <Flex alignItems="center" justifyContent="space-between" width="100%">
+    //     {t('Wallet')}
+    //     {hasLowBnbBalance && <WarningIcon color="warning" width="24px" />}
+    //   </Flex>
+    // </UserMenuItem>
+    <Flex/>
   )
 }
 

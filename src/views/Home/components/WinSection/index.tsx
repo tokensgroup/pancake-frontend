@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, Text, TicketFillIcon, PredictionsIcon } from '@pancakeswap/uikit'
+// import { Flex, Text, TicketFillIcon, PredictionsIcon } from '@pancakeswap/uikit'
+import { Flex, Text, ChartIcon} from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'
 import PurpleWordHeading from '../PurpleWordHeading'
@@ -56,14 +57,16 @@ const TopRightImgWrapper = styled(Flex)`
 `
 
 const PredictionCardData: IconCardData = {
-  icon: <PredictionsIcon width="36px" color="inverseContrast" />,
+  // icon: <PredictionsIcon width="36px" color="inverseContrast" />,
+  icon: <ChartIcon width="36px" color="inverseContrast" />,
   background: 'linear-gradient(180deg, #ffb237 0%, #ffcd51 51.17%, #ffe76a 100%);',
   borderColor: '#ffb237',
   rotation: '-2.36deg',
 }
 
 const LotteryCardData: IconCardData = {
-  icon: <TicketFillIcon color="white" width="36px" />,
+  // icon: <TicketFillIcon color="white" width="36px" />,
+  icon: <ChartIcon width="36px" color="inverseContrast" />,
   background: ' linear-gradient(180deg, #7645D9 0%, #5121B1 100%);',
   borderColor: '#3C1786',
   rotation: '1.43deg',

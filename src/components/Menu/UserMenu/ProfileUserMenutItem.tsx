@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { Flex, Skeleton, UserMenuItem } from '@pancakeswap/uikit'
+// import { Flex, Skeleton, UserMenuItem } from '@pancakeswap/uikit'
+import { Flex, Skeleton } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 
 interface ProfileUserMenuItemProps {
@@ -21,27 +22,30 @@ const ProfileUserMenuItem: React.FC<ProfileUserMenuItemProps> = ({ isLoading, ha
 
   if (isLoading) {
     return (
-      <UserMenuItem>
-        <Skeleton height="24px" width="35%" />
-      </UserMenuItem>
+      // <UserMenuItem>
+      //   <Skeleton height="24px" width="35%" />
+      // </UserMenuItem>
+      <Flex/>
     )
   }
 
   if (!hasProfile) {
     return (
-      <UserMenuItem as={Link} to="/profile">
-        <Flex alignItems="center" justifyContent="space-between" width="100%">
-          {t('Make a Profile')}
-          <Dot />
-        </Flex>
-      </UserMenuItem>
+      // <UserMenuItem as={Link} to="/profile">
+      //   <Flex alignItems="center" justifyContent="space-between" width="100%">
+      //     {t('Make a Profile')}
+      //     <Dot />
+      //   </Flex>
+      // </UserMenuItem>
+      <Flex/>
     )
   }
 
   return (
-    <UserMenuItem as={Link} to="/profile">
-      {t('Your Profile')}
-    </UserMenuItem>
+    // <UserMenuItem as={Link} to="/profile">
+    //   {t('Your Profile')}
+    // </UserMenuItem>
+    <Flex/>
   )
 }
 

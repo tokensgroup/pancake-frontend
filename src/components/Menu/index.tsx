@@ -1,14 +1,17 @@
 import React from 'react'
 import { Menu as UikitMenu } from '@pancakeswap/uikit'
+import { useWeb3React } from '@web3-react/core'
 import { languageList } from 'config/localization/languages'
 import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'
+import useAuth from 'hooks/useAuth'
 import { usePriceCakeBusd } from 'state/farms/hooks'
 import { useProfile } from 'state/profile/hooks'
 import config from './config'
-import UserMenu from './UserMenu'
 
 const Menu = (props) => {
+  const { account } = useWeb3React()
+  const { login, logout } = useAuth()
   const { isDark, toggleTheme } = useTheme()
   const cakePriceUsd = usePriceCakeBusd()
   const { profile } = useProfile()
@@ -16,7 +19,9 @@ const Menu = (props) => {
 
   return (
     <UikitMenu
-      userMenu={<UserMenu />}
+      account={account}
+      login={login}
+      logout={logout}
       isDark={isDark}
       toggleTheme={toggleTheme}
       currentLang={currentLanguage.code}

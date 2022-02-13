@@ -1,5 +1,6 @@
 import React from 'react'
-import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon, SwapIcon } from '@pancakeswap/uikit'
+// import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon, SwapIcon } from '@pancakeswap/uikit'
+import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useGetStats } from 'hooks/api'
 import useTheme from 'hooks/useTheme'
@@ -31,7 +32,8 @@ const Stats = () => {
   }
 
   const TradesCardData: IconCardData = {
-    icon: <SwapIcon color="primary" width="36px" />,
+    // icon: <SwapIcon color="primary" width="36px" />,
+    icon: <ChartIcon color="primary" width="36px" />,
     background: theme.colors.background,
     borderColor: theme.colors.cardBorder,
   }

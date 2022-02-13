@@ -60,10 +60,12 @@ const WalletModal: React.FC<WalletModalProps> = ({ initialView = WalletView.WALL
         </IconButton>
       </ModalHeader>
       <Tabs>
+        {/*
         <ButtonMenu scale="sm" variant="subtle" onItemClick={handleClick} activeIndex={view} fullWidth>
           <ButtonMenuItem>{t('Wallet')}</ButtonMenuItem>
           <ButtonMenuItem>{t('Transactions')}</ButtonMenuItem>
         </ButtonMenu>
+        */}
       </Tabs>
       <ModalBody p="24px" maxWidth="400px" width="100%">
         {view === WalletView.WALLET_INFO && <WalletInfo hasLowBnbBalance={hasLowBnbBalance} onDismiss={onDismiss} />}
