@@ -38,6 +38,7 @@ const Footer = () => {
   const { t } = useTranslation()
   return (
     <Wrapper>
+      {/*
       <Flex flexDirection={['column', 'column', 'row']} alignItems="center">
         <ButtonMenu variant="subtle" scale="sm" activeIndex={0}>
           <ButtonMenuItem>V2</ButtonMenuItem>
@@ -76,7 +77,9 @@ const Footer = () => {
         </BubbleWrapper>
         <Image src="/images/help.svg" alt="Get some help" width={160} height={108} />
       </Flex>
+      */}
     </Wrapper>
+
   )
 }
 

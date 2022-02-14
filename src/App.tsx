@@ -71,9 +71,12 @@ const App: React.FC = () => {
               <Home />
             </Route>
             */}
-            <Route path="/" component={Swap}/>
 
-            <Route exact path="/farms/auction">
+            <Route path="/" exact>
+              <Redirect to="/swap" />
+            </Route>
+
+            <Route exact  path="/farms/auction">
               <FarmAuction />
             </Route>
             <Route path="/farms">
