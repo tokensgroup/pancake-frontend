@@ -7,6 +7,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     icon: 'HomeIcon',
     href: '/',
   },
+  /*
   {
     label: t('Trade'),
     icon: 'TradeIcon',
@@ -19,14 +20,26 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: t('Liquidity'),
         href: '/pool',
       },
-      /*
+
       {
         label: t('LP Migration'),
         href: 'https://v1exchange.pancakeswap.finance/#/migrate',
       },
-      */
+
     ],
   },
+  */
+  {
+    label: t('Exchange'),
+    icon: 'TradeIcon',
+    href: '/swap',
+  },
+  {
+    label: t('Liquidity'),
+    icon: 'TradeIcon',
+    href: '/pool',
+  },
+
   {
     label: t('Farms'),
     icon: 'FarmIcon',
