@@ -19,10 +19,12 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: t('Liquidity'),
         href: '/pool',
       },
+      /*
       {
         label: t('LP Migration'),
         href: 'https://v1exchange.pancakeswap.finance/#/migrate',
       },
+      */
     ],
   },
   {
@@ -35,6 +37,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     icon: 'PoolIcon',
     href: '/pools',
   },
+  /*
   {
     label: t('Prediction (BETA)'),
     icon: 'PredictionsIcon',
@@ -49,34 +52,37 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       color: 'success',
     },
   },
-  {
-    label: t('Collectibles'),
-    icon: 'NftIcon',
-    href: '/collectibles',
-  },
-  {
-    label: t('Team Battle'),
-    icon: 'TeamBattleIcon',
-    href: '/competition',
-  },
-  {
-    label: t('Teams & Profile'),
-    icon: 'GroupsIcon',
-    items: [
-      {
-        label: t('Leaderboard'),
-        href: '/teams',
-      },
-      {
-        label: t('Task Center'),
-        href: '/profile/tasks',
-      },
-      {
-        label: t('Your Profile'),
-        href: '/profile',
-      },
-    ],
-  },
+
+ {
+   label: t('Collectibles'),
+   icon: 'NftIcon',
+   href: '/collectibles',
+ },
+ {
+   label: t('Team Battle'),
+   icon: 'TeamBattleIcon',
+   href: '/competition',
+ },
+
+ {
+   label: t('Teams & Profile'),
+   icon: 'GroupsIcon',
+   items: [
+     {
+       label: t('Leaderboard'),
+       href: '/teams',
+     },
+     {
+       label: t('Task Center'),
+       href: '/profile/tasks',
+     },
+     {
+       label: t('Your Profile'),
+       href: '/profile',
+     },
+   ],
+ },
+ */
   {
     label: t('Info'),
     icon: 'InfoIcon',
@@ -87,6 +93,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     icon: 'IfoIcon',
     href: '/ifo',
   },
+  /*
   {
     label: t('More'),
     icon: 'MoreIcon',
@@ -117,6 +124,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       },
     ],
   },
+  */
 ]
 
 export default config
