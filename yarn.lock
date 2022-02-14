@@ -1324,6 +1324,32 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
+"@bangswap/sdk@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@bangswap/sdk/-/sdk-2.4.0.tgz#e7775cf9d71f07c36543d4ede44ff4cf96481f8f"
+  integrity sha512-K8ym5NaxeeWuK8IBrkFULlYzFMv9ubSQ2zof/mqD+Q7dIZEwHMAu7uS36LpsHxARjLwBDxv4E4o9mebKj4jVsQ==
+  dependencies:
+    "@pancakeswap-libs/pancake-swap-core" "^0.1.0"
+    big.js "^5.2.2"
+    decimal.js-light "^2.5.0"
+    jsbi "^3.1.1"
+    tiny-invariant "^1.1.0"
+    tiny-warning "^1.0.3"
+    toformat "^2.0.0"
+
+"@bangswap/uikit@^0.41.4":
+  version "0.41.4"
+  resolved "https://registry.yarnpkg.com/@bangswap/uikit/-/uikit-0.41.4.tgz#eddcb7995b26bd9977393b7db187aecd789dd28e"
+  integrity sha512-bDf79qOK70lglCyWIffTmUunb01k8/F1zjYxD8xCi5yyfhtPSxs4u/+0eL6r3XTBAVDXMNpomOG+r3MmExxyJA==
+  dependencies:
+    "@popperjs/core" "^2.9.2"
+    "@types/lodash" "^4.14.168"
+    "@types/styled-system" "^5.1.10"
+    lodash "^4.17.20"
+    react-popper "^2.2.5"
+    react-transition-group "^4.4.1"
+    styled-system "^5.1.5"
+
 "@bcoe/v8-coverage@^0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
@@ -2589,32 +2615,6 @@
     eslint-plugin-jsx-a11y "^6.4.1"
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.0.0"
-
-"@pancakeswap/sdk@^2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@pancakeswap/sdk/-/sdk-2.3.2.tgz#35c986ac4965dff713bb06d523ffa34312a07228"
-  integrity sha512-ILwO8RsOF9hc/k63WkbUB36uAGPi4QWtPWv/smNAdzIM2F09VdaWL8/NsSdp8bB6cA4ZmqP2DUFsTMvLOodl0A==
-  dependencies:
-    "@pancakeswap-libs/pancake-swap-core" "^0.1.0"
-    big.js "^5.2.2"
-    decimal.js-light "^2.5.0"
-    jsbi "^3.1.1"
-    tiny-invariant "^1.1.0"
-    tiny-warning "^1.0.3"
-    toformat "^2.0.0"
-
-"@pancakeswap/uikit@^0.41.0":
-  version "0.41.0"
-  resolved "https://registry.yarnpkg.com/@pancakeswap/uikit/-/uikit-0.41.0.tgz#263b37eee41ba84e3231859523c2a71024593098"
-  integrity sha512-XDmNmlKFiPLa5Aub9cGRLsjkItkYFhq2UyvVJFyL1G9gi6ZSzGb01mrd1y6EHcKz8ZjREOI3t1Xfm0Mslgx+aQ==
-  dependencies:
-    "@popperjs/core" "^2.9.2"
-    "@types/lodash" "^4.14.168"
-    "@types/styled-system" "^5.1.10"
-    lodash "^4.17.20"
-    react-popper "^2.2.5"
-    react-transition-group "^4.4.1"
-    styled-system "^5.1.5"
 
 "@pmmmwh/react-refresh-webpack-plugin@0.4.3":
   version "0.4.3"

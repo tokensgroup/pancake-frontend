@@ -7,12 +7,12 @@ import { useWeb3React } from '@web3-react/core'
 //   UserMenu as UIKitUserMenu,
 //   UserMenuDivider,
 //   UserMenuItem,
-// } from '@pancakeswap/uikit'
+// } from '@bangswap/uikit'
 import {
   Flex,
   useModal,
   Menu as UIKitMenu,
-} from '@pancakeswap/uikit'
+} from '@bangswap/uikit'
 import useAuth from 'hooks/useAuth'
 import { useProfile } from 'state/profile/hooks'
 import ConnectWalletButton from 'components/ConnectWalletButton'

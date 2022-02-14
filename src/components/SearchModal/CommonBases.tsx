@@ -1,6 +1,6 @@
 import React from 'react'
-import { ChainId, Currency, currencyEquals, ETHER, Token } from '@pancakeswap/sdk'
-import { Text } from '@pancakeswap/uikit'
+import { ChainId, Currency, currencyEquals, ETHER, Token } from '@bangswap/sdk'
+import { Text } from '@bangswap/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 

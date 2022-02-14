@@ -11,7 +11,7 @@ import { BIG_ZERO } from 'utils/bigNumber'
 import { PublicIfoData } from '../../types'
 import { getStatus } from '../helpers'
 
-// https://github.com/pancakeswap/pancake-contracts/blob/master/projects/ifo/contracts/IFOV2.sol#L431
+// https://github.com/bangswap/pancake-contracts/blob/master/projects/ifo/contracts/IFOV2.sol#L431
 // 1,000,000,000 / 100
 const TAX_PRECISION = 10000000000
 

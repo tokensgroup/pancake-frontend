@@ -1,6 +1,6 @@
 import React from 'react'
-// import { Flex, UserMenuItem, WarningIcon } from '@pancakeswap/uikit'
-import { Flex, WarningIcon } from '@pancakeswap/uikit'
+// import { Flex, UserMenuItem, WarningIcon } from '@bangswap/uikit'
+import { Flex, WarningIcon } from '@bangswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 
 interface WalletUserMenuItemProps {

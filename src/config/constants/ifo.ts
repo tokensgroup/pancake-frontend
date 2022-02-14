@@ -232,7 +232,7 @@ const ifos: Ifo[] = [
     token: tokens.blink,
     releaseBlockNumber: 3279767,
     campaignId: '511010000',
-    articleUrl: 'https://medium.com/pancakeswap/1-000-000-ifo-blink-joins-pancakeswap-15841800bdd8',
+    articleUrl: 'https://medium.com/bangswap/1-000-000-ifo-blink-joins-pancakeswap-15841800bdd8',
     tokenOfferingPrice: null,
     version: 1,
   },
