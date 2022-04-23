@@ -35,3 +35,6 @@ yarn-debug.log*
 yarn-error.log*
 debug.log*
 
+packages/uikit/node_modules
+packages/eslint-config/node_modules
+packages/uikit/dist

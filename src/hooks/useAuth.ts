@@ -26,9 +26,7 @@ const useAuth = () => {
   const login = useCallback(
     (connectorID: ConnectorNames) => {
       setTimeout(()=> {
-        console.log("connector --")
         const connector = connectorsByName[connectorID]
-        console.log(connector)
         if (connector) {
           activate(connector, async (error: Error) => {
             if (error instanceof UnsupportedChainIdError) {
@@ -37,8 +35,6 @@ const useAuth = () => {
                 activate(connector)
               }
             } else {
-              console.log("connector start")
-              alert(error)
               window.localStorage.removeItem(connectorLocalStorageKey)
               if (error instanceof NoEthereumProviderError || error instanceof NoBscProviderError) {
                 toastError(t('Provider Error'), t('No provider was found'))

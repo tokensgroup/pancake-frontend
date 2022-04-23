@@ -2,6 +2,9 @@
   "name": "pancake-frontend",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
@@ -31,11 +34,13 @@
       "last 1 safari version"
     ]
   },
+  "deprecated": {
+    "@pancakeswap/uikit": "^0.41.0"
+  },
   "dependencies": {
     "@binance-chain/bsc-connector": "^1.0.0",
     "@ethersproject/experimental": "^5.0.1",
     "@pancakeswap/sdk": "^2.3.2",
-    "@pancakeswap/uikit": "^0.41.0",
     "@reduxjs/toolkit": "^1.5.0",
     "@types/multicodec": "^1.0.0",
     "@types/node": "^13.13.5",
@@ -96,6 +101,7 @@
     "@types/simplemde": "^1.11.7",
     "eslint": "^7.26.0",
     "husky": "4.3.5",
+    "lerna": "^4.0.0",
     "prettier": "^2.3.0",
     "source-map-explorer": "^2.5.2",
     "ts-node": "^9.1.1"
