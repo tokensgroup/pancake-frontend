@@ -21,19 +21,29 @@ export const links = [
     icon: "HomeIcon",
     href: "/",
   },
+  // {
+  //   label: "Trade",
+  //   icon: "TradeIcon",
+  //   items: [
+  //     {
+  //       label: "Exchange",
+  //       href: "https://exchange.pancakeswap.finance",
+  //     },
+  //     {
+  //       label: "Liquidity",
+  //       href: "https://exchange.pancakeswap.finance/#/pool",
+  //     },
+  //   ],
+  // },
   {
-    label: "Trade",
+    label: "Exchange",
     icon: "TradeIcon",
-    items: [
-      {
-        label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
-      },
-      {
-        label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
-      },
-    ],
+    href: "/swap",
+  },
+  {
+    label: "Liquidity",
+    icon: "TradeIcon",
+    href: "/pool",
   },
   {
     label: "Farms",
